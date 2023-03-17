@@ -1,0 +1,15 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "VS code rest client is cool",
+    "important": true
+}
+
+### fail due to not having a content property
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "foo": "bar"
+}
