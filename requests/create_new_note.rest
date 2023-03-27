@@ -13,3 +13,11 @@ Content-Type: application/json
 {
     "foo": "bar"
 }
+
+### fail due to value of content property being too short
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "foo"
+}
